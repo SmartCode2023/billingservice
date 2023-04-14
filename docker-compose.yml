@@ -1,0 +1,29 @@
+version: '3.9'
+services:
+  app:
+    image: maven:3.8.3-openjdk-17
+    volumes:
+      - ./factura:/factura
+    container_name: myapp-container
+    ports:
+      - 9099:9099
+    working_dir: /factura
+    command: mvn spring-boot:run
+    environment:
+      - SPRING_PROFILES_ACTIVE=default
+      - SPRING_DATASOURCE_URL=jdbc:mariadb://db:3306/mysql
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=maria123
+    depends_on:
+      - db
+    
+  db:
+    image: mariadb
+    container_name: mariadb-container
+    environment:
+      - MYSQL_USER=root
+      - MYSQL_ROOT_PASSWORD=maria123
+      - MYSQL_DATABASE=mysql
+    ports:
+      - 3306:3306
+
