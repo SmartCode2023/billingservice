@@ -13,7 +13,7 @@ import java.util.List;
 
 
 @RestController
-@RequestMapping("/payMethod")
+@RequestMapping("/billing/payMethod")
 public class PayMethodController {
     @Autowired
     private PayMethodService payMethodService;

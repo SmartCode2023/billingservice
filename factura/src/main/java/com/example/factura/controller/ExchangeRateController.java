@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/exchangeRate")
+@RequestMapping("/billing/exchangeRate")
 public class ExchangeRateController {
     @Autowired
     private CoinService coinService;

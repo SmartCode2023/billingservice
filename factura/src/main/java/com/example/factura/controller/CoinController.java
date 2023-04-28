@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/coin")
+@RequestMapping("/billing/coin")
 public class CoinController {
 
     @Autowired

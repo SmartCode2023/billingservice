@@ -1,9 +1,8 @@
 {
 	"info": {
-		"_postman_id": "fd4005aa-b8ae-41a5-b752-19f548fb1326",
+		"_postman_id": "df46b023-fbe4-4c94-94a0-5d0298daacc7",
 		"name": "MS_Factura",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "21280109"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
@@ -15,13 +14,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9099/coin",
+							"raw": "http://localhost:9099/billing/coin",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "9099",
 							"path": [
+								"billing",
 								"coin"
 							]
 						}
@@ -43,13 +43,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:9099/coin",
+							"raw": "http://localhost:9099/billing/coin",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "9099",
 							"path": [
+								"billing",
 								"coin"
 							]
 						}
@@ -62,15 +63,16 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9099/coin/1",
+							"raw": "http://localhost:9099/billing/coin/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "9099",
 							"path": [
+								"billing",
 								"coin",
-								"1"
+								"2"
 							]
 						}
 					},
@@ -83,7 +85,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"id\": 1,\r\n  \"codeISO\": 2,\r\n  \"name\":\"peso\"\r\n}",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"codeISO\": 2,\r\n  \"name\":\"dolar\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -91,13 +93,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:9099/coin/1",
+							"raw": "http://localhost:9099/billing/coin/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "9099",
 							"path": [
+								"billing",
 								"coin",
 								"1"
 							]
@@ -111,13 +114,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9099/coin/1",
+							"raw": "http://localhost:9099/billing/coin/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "9099",
 							"path": [
+								"billing",
 								"coin",
 								"1"
 							]
@@ -136,13 +140,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9099/payMethod",
+							"raw": "http://localhost:9099/billing/payMethod",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "9099",
 							"path": [
+								"billing",
 								"payMethod"
 							]
 						}
@@ -156,7 +161,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"id\": 0,\r\n  \"name\":\"peso\"\r\n}",
+							"raw": "{\r\n  \"id\": 0,\r\n  \"name\":\"efectivo\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -164,13 +169,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:9099/payMethod",
+							"raw": "http://localhost:9099/billing/payMethod",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "9099",
 							"path": [
+								"billing",
 								"payMethod"
 							]
 						}
@@ -183,13 +189,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9099/payMethod/1",
+							"raw": "http://localhost:9099/billing/payMethod/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "9099",
 							"path": [
+								"billing",
 								"payMethod",
 								"1"
 							]
@@ -212,13 +219,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:9099/payMethod/1",
+							"raw": "http://localhost:9099/billing/payMethod/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "9099",
 							"path": [
+								"billing",
 								"payMethod",
 								"1"
 							]
@@ -232,13 +240,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9099/payMethod/1",
+							"raw": "http://localhost:9099/billing/payMethod/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "9099",
 							"path": [
+								"billing",
 								"payMethod",
 								"1"
 							]
@@ -257,13 +266,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9099/invoice",
+							"raw": "http://localhost:9099/billing/invoice",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "9099",
 							"path": [
+								"billing",
 								"invoice"
 							]
 						}
@@ -277,7 +287,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"id\": 0,\r\n  \"idCoin\":1,\r\n  \"idContract\":2,\r\n  \"total\":40000,\r\n  \"idPayMethod\":1\r\n}",
+							"raw": "{\r\n  \"id\": 0,\r\n  \"idCoin\":2,\r\n  \"idContract\":2,\r\n  \"total\":40000,\r\n  \"idPayMethod\":3\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -285,13 +295,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:9099/invoice",
+							"raw": "http://localhost:9099/billing/invoice",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "9099",
 							"path": [
+								"billing",
 								"invoice"
 							]
 						}
@@ -304,13 +315,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9099/invoice/1",
+							"raw": "http://localhost:9099/billing/invoice/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "9099",
 							"path": [
+								"billing",
 								"invoice",
 								"1"
 							]
@@ -325,7 +337,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"id\": 0,\r\n  \"idCoin\":1,\r\n  \"idContract\":2,\r\n  \"total\":40000,\r\n  \"idPayMethod\":1\r\n}",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"idCoin\":2,\r\n  \"idContract\":2,\r\n  \"total\":40000,\r\n  \"idPayMethod\":1\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -333,13 +345,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:9099/invoice/1",
+							"raw": "http://localhost:9099/billing/invoice/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "9099",
 							"path": [
+								"billing",
 								"invoice",
 								"1"
 							]
@@ -353,13 +366,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9099/invoice/1",
+							"raw": "http://localhost:9099/billing/invoice/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "9099",
 							"path": [
+								"billing",
 								"invoice",
 								"1"
 							]
@@ -376,7 +390,19 @@
 					"name": "getAllExchangeRate",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9099/billing/exchangeRate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"billing",
+								"exchangeRate"
+							]
+						}
 					},
 					"response": []
 				},
@@ -387,7 +413,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"id\": 0,\r\n  \"idOriginCoin\":1,\r\n  \"idODestinationCoin\":1,\r\n  \"date\":\"2023-04-12T00:28:28.523+00:00\",\r\n  \"rate\":15\r\n}",
+							"raw": "{\r\n  \"id\": 0,\r\n  \"idOriginCoin\":2,\r\n  \"idODestinationCoin\":2,\r\n  \"date\":\"2023-04-12T00:28:28.523+00:00\",\r\n  \"rate\":15\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -395,13 +421,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:9099/exchangeRate",
+							"raw": "http://localhost:9099/billing/exchangeRate",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "9099",
 							"path": [
+								"billing",
 								"exchangeRate"
 							]
 						}
@@ -411,18 +438,27 @@
 				{
 					"name": "getExchangeRateById",
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 0,\r\n  \"nombre\":\"ABC123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": "http://localhost:9099/exchangeRate/1",
+							"raw": "http://localhost:9091/billing/tiposVehiculos",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "9099",
+							"port": "9091",
 							"path": [
-								"exchangeRate",
-								"1"
+								"billing",
+								"tiposVehiculos"
 							]
 						}
 					},
@@ -443,13 +479,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:9099/exchangeRate/1",
+							"raw": "http://localhost:9099/billing/exchangeRate/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "9099",
 							"path": [
+								"billing",
 								"exchangeRate",
 								"1"
 							]
@@ -463,13 +500,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9099/exchangeRate/1",
+							"raw": "http://localhost:9099/billing/exchangeRate/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "9099",
 							"path": [
+								"billing",
 								"exchangeRate",
 								"1"
 							]
